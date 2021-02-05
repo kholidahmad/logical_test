@@ -1,0 +1,3 @@
+SELECT tb_mahasiswa.mhs_nama 
+FROM tb_mahasiswa,tb_mahasiswa_niali,tb_mata_kuliah 
+WHERE tb_mata_kuliah.mk_kode='MK303' AND tb_mahasiswa_nilai.nilai=(SELECT max(nilai) FROM tb_mahasiswa_nilai WHERE mk_id = 'MK303')
