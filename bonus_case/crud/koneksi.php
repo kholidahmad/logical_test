@@ -1,0 +1,12 @@
+<!-- nama: AHMAT CHOLID -->
+<!-- EMAIL: ahmatcholid@gmail.com -->
+<?php
+$host="localhost";
+$user="root";
+$password="";
+$db="crud";
+$kon = mysqli_connect($host,$user,$password,$db);
+if (!$kon){
+	  die("Koneksi gagal:".mysqli_connect_error());
+}
+?>
